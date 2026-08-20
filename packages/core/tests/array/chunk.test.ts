@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { chunk } from '../src'
+import { chunk } from '../../src/array'
 
 describe('chunk', () => {
   it('splits an array into chunks', () => {
