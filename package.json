@@ -1,0 +1,30 @@
+{
+  "name": "sunjc-utils-monorepo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "packageManager": "pnpm@10.9.0",
+  "devDependencies": {
+    "@changesets/cli": "^2.29.0",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.8.1",
+    "prettier": "^3.9.6",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.67.0",
+    "vitest": "^3.0.0"
+  }
+}
